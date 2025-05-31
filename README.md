@@ -1,38 +1,48 @@
-Quiz Application
-1. Introduction
-The Quiz Application is a console-based program developed in C language. It allows users to take a quiz consisting of multiple-choice questions, track their score, and review their performance. The application shuffles the questions, supports skipping questions, and provides a time limit for the quiz.
+# Quiz Application  
 
-2. Objectives
-To create an engaging and interactive quiz application.
-To implement a time-bound quiz system.
-To allow users to skip and review questions.
-To store and display results.
+## Introduction  
+The Quiz Application is a console-based program developed in **C language**. It allows users to:  
+- Take a quiz consisting of multiple-choice questions  
+- Track their score  
+- Review their performance  
+- Shuffle questions for variety  
+- Skip questions and return to them later  
+- Complete the quiz within a time limit  
 
-3. Features
-Question Display: Displays multiple-choice questions with four options.
-User Input: Allows users to select an option or skip a question.
-Score Tracking: Tracks correct and incorrect answers, adjusting the score accordingly.
-Shuffling Questions: Randomizes the order of questions for each attempt.
-Skipped Questions: Allows users to skip questions and review them later.
-Time Limit: Enforces a time limit for the entire quiz.
-Results Storage: Saves quiz results to a file.
+## Objectives  
+- Create an engaging and interactive quiz experience  
+- Implement a time-bound quiz system  
+- Allow question skipping and reviewing  
+- Store and display quiz results  
 
-4. Implementation Details
-The Quiz Application is implemented using C language with the following main components:
+## Features  
+✔ **Question Display** – Shows multiple-choice questions with four options  
+✔ **User Input** – Accepts answer selection or question skipping  
+✔ **Score Tracking** – Calculates and updates score based on correct/incorrect answers  
+✔ **Shuffling Questions** – Randomizes question order for each attempt  
+✔ **Skipped Questions** – Lets users skip and revisit questions later  
+✔ **Time Limit** – Enforces a time constraint for the quiz  
+✔ **Results Storage** – Saves quiz results to a file for future reference  
 
-4.1. Structure Definitions
-Question Structure: Holds the question text, options, and the correct option.
-Information Structure: Holds the user's name and roll number.
+## Implementation Details  
+Built in **C language**, the application consists of the following components:  
 
-4.2. Core Functions
-clearScreen(): Clears the console screen.
-setConsoleColor(int color): Sets the console text color.
-displayQuestions(): Displays the current question and options.
-getUserChoice(): Gets the user's choice for the current question.
-skipQuestion(): Adds the current question to the list of skipped questions.
-displayResult(): Displays the final score.
-shuffleQuestions(): Randomizes the order of questions.
-attemptQuestions(): Handles the main quiz logic, including time tracking and skipped questions review.
+### 1. Structure Definitions  
+- **`Question` Structure** – Stores question text, options, and correct answer  
+- **`Information` Structure** – Holds user details (name, roll number)  
 
-5. User Interaction
-The application begins by prompting the user to start the quiz. It then displays instructions and asks for the user's name and roll number. The quiz proceeds by displaying questions and accepting user input. At the end of the quiz, the results are displayed and saved to a file.
+### 2. Core Functions  
+- **`clearScreen()`** – Clears the console screen  
+- **`setConsoleColor(int color)`** – Sets console text color for better UI  
+- **`displayQuestions()`** – Shows current question and options  
+- **`getUserChoice()`** – Captures user input for answering/skipping  
+- **`skipQuestion()`** – Adds current question to skipped list  
+- **`displayResult()`** – Shows final score and performance  
+- **`shuffleQuestions()`** – Randomizes question order  
+- **`attemptQuestions()`** – Manages quiz flow, time tracking, and skipped questions  
+## User Interaction  
+1. **Quiz Start** – User initiates the quiz  
+2. **Instructions** – Application displays quiz rules  
+3. **User Details** – Prompts for name and roll number  
+4. **Quiz Session** – Displays questions, tracks time, and accepts answers  
+5. **Results** – Shows score and saves results to a file  estions.
